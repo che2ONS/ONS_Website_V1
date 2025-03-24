@@ -1,451 +1,806 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
   <head>
+    <title>Open Network Solutions</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  
-    Document Title
-    =============================================
-    -->
-    <title>Titan | Multipurpose HTML5 Template</title>
-    <!--  
-    Favicons
-    =============================================
-    -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    -->
-    <!-- Default stylesheets-->
-    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Titan</a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
-                  <li><a href="index_mp_fullscreen_video_background.html">Default</a></li>
-                  <li><a href="index_op_fullscreen_gradient_overlay.html">One Page</a></li>
-                  <li><a href="index_agency.html">Agency</a></li>
-                  <li><a href="index_portfolio.html">Portfolio</a></li>
-                  <li><a href="index_restaurant.html">Restaurant</a></li>
-                  <li><a href="index_finance.html">Finance</a></li>
-                  <li><a href="index_landing.html">Landing Page</a></li>
-                  <li><a href="index_photography.html">Photography</a></li>
-                  <li><a href="index_shop.html">Shop</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_static.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_static.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Flexslider Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_flexslider.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_flexslider.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Video Background Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_video_background.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_video_background.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Text Rotator Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_text_rotator.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_text_rotator.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gradient Overlay Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="about1.html">About 1</a></li>
-                      <li><a href="about2.html">About 2</a></li>
-                      <li><a href="about3.html">About 3</a></li>
-                      <li><a href="about4.html">About 4</a></li>
-                      <li><a href="about5.html">About 5</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="service1.html">Service 1</a></li>
-                      <li><a href="service2.html">Service 2</a></li>
-                      <li><a href="service3.html">Service 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="pricing1.html">Pricing 1</a></li>
-                      <li><a href="pricing2.html">Pricing 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="gallery_col_2.html">2 Columns</a></li>
-                      <li><a href="gallery_col_3.html">3 Columns</a></li>
-                      <li><a href="gallery_col_4.html">4 Columns</a></li>
-                      <li><a href="gallery_col_6.html">6 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="contact1.html">Contact 1</a></li>
-                      <li><a href="contact2.html">Contact 2</a></li>
-                      <li><a href="contact3.html">Contact 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Restaurant menu</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="restaurant_menu1.html">Menu 2 Columns</a></li>
-                      <li><a href="restaurant_menu2.html">Menu 3 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="login_register.html">Login / Register</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="404.html">Page 404</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_boxed_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_full_width_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Hover Style</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_hover_black.html">Black</a></li>
-                      <li><a href="portfolio_hover_gradient.html">Gradient</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Image</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_image1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_image2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Slider</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_slider1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_slider2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Video</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_video1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_video2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Standard</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_standard_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_standard_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_col_3.html">3 Columns</a></li>
-                      <li><a href="blog_grid_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_masonry_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_3.html">3 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_single_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_single_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Features</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="alerts-and-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
-                  <li><a href="buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
-                  <li><a href="tabs_and_accordions.html"><i class="fa fa-tasks"></i> Tabs &amp; Accordions</a></li>
-                  <li><a href="content_box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
-                  <li><a href="forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
-                  <li><a href="icons.html"><i class="fa fa-star"></i> Icons</a></li>
-                  <li><a href="progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
-                  <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Product</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="shop_product_col_3.html">3 columns</a></li>
-                      <li><a href="shop_product_col_4.html">4 columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="shop_single_product.html">Single Product</a></li>
-                  <li><a href="shop_checkout.html">Checkout</a></li>
-                </ul>
-              </li>
-              <!--li.dropdown.navbar-cart-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
-              <!--        span.icon-basket-->
-              <!--        |-->
-              <!--        span.cart-item-number 2-->
-              <!--    ul.dropdown-menu.cart-list(role='menu')-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Short striped sweater-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Colored jewel rings-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                .cart-sub-totle-->
-              <!--                    strong Total: $476.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
-              <!--li.dropdown-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
-              <!--    ul.dropdown-menu(role='menu')-->
-              <!--        li-->
-              <!--            .dropdown-search-->
-              <!--                form(role='form')-->
-              <!--                    input.form-control(type='text', placeholder='Search...')-->
-              <!--                    |-->
-              <!--                    button.search-btn(type='submit')-->
-              <!--                        i.fa.fa-search-->
-              <li class="dropdown"><a class="dropdown-toggle" href="documentation.html" data-toggle="dropdown">Documentation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="documentation.html#contact">Contact Form</a></li>
-                  <li><a href="documentation.html#reservation">Reservation Form</a></li>
-                  <li><a href="documentation.html#mailchimp">Mailchimp</a></li>
-                  <li><a href="documentation.html#gmap">Google Map</a></li>
-                  <li><a href="documentation.html#plugin">Plugins</a></li>
-                  <li><a href="documentation.html#changelog">Changelog</a></li>
-                </ul>
-              </li>
-            </ul>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ecoverde</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="agent.html" class="nav-link">Agent</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-lg-7 col-md-6 ftco-animate d-flex align-items-end">
+          	<div class="text">
+	            <h1 class="mb-4">Find Perfect <br>House From Your Area.</h1>
+	            <p style="font-size: 18px;">From as low as $20 A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">View all properties</a></p>
+            </div>
           </div>
         </div>
-      </nav>
-      <section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="assets/images/showcase_bg.jpg">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Powerful. Multipurpose.</div>
-            <div class="font-alt mb-40 titan-title-size-4">100+ Layouts</div><a class="section-scroll btn btn-border-w btn-round" href="#demos">See Demos</a>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt search-bg">
+    	<div class="container">
+	    	<div class="row">
+					<div class="col-md-12">
+						<div class="search-wrap-1 ftco-animate p-4">
+							<form action="#" class="search-property-1">
+		        		<div class="row">
+		        			<div class="col-lg align-items-end">
+		        				<div class="form-group">
+		        					<label for="#">Keyword</label>
+		          				<div class="form-field">
+		          					<div class="icon"><span class="fa fa-search"></span></div>
+				                <input type="text" class="form-control" placeholder="Enter Keyword">
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg align-items-end">
+		        				<div class="form-group">
+		        					<label for="#">Property Type</label>
+		        					<div class="form-field">
+		          					<div class="select-wrap">
+		                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+		                      <select name="" id="" class="form-control">
+		                        <option value="">Residence</option>
+		                        <option value="">Offices</option>
+		                        <option value="">Commercial</option>
+		                      </select>
+		                    </div>
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg align-items-end">
+		        				<div class="form-group">
+		        					<label for="#">Location</label>
+		          				<div class="form-field">
+		          					<div class="icon"><span class="fa fa-search"></span></div>
+				                <input type="text" class="form-control" placeholder="Location">
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg align-items-end">
+		        				<div class="form-group">
+		        					<label for="#">Price Limit</label>
+		        					<div class="form-field">
+		          					<div class="select-wrap">
+		                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+		                      <select name="" id="" class="form-control">
+		                        <option value="">$5,000</option>
+		                        <option value="">$10,000</option>
+		                        <option value="">$50,000</option>
+		                        <option value="">$100,000</option>
+		                        <option value="">$200,000</option>
+		                        <option value="">$300,000</option>
+		                        <option value="">$400,000</option>
+		                        <option value="">$500,000</option>
+		                        <option value="">$600,000</option>
+		                        <option value="">$700,000</option>
+		                        <option value="">$800,000</option>
+		                        <option value="">$900,000</option>
+		                        <option value="">$1,000,000</option>
+		                        <option value="">$2,000,000</option>
+		                      </select>
+		                    </div>
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg align-self-end">
+		        				<div class="form-group">
+		        					<div class="form-field">
+				                <input type="submit" value="Search" class="form-control btn btn-primary">
+				              </div>
+			              </div>
+		        			</div>
+		        		</div>
+		        	</form>
+		        </div>
+					</div>
+	    	</div>
+	    </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-primary">
+      <div class="container">
+        <div class="row d-flex no-gutters">
+          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
+            <div class="media block-6 services services-bg d-block text-center px-4 py-5">
+            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-business"></span></div>
+              <div class="media-body py-md-4">
+                <h3>Trusted by Thousands</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
+            <div class="media block-6 services services-bg services-darken d-block text-center px-4 py-5">
+            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-home"></span></div>
+              <div class="media-body py-md-4">
+                <h3>Wide Range of Properties</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
+            <div class="media block-6 services services-bg services-lighten d-block text-center px-4 py-5">
+            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-stats"></span></div>
+              <div class="media-body py-md-4">
+                <h3>Financing Made Easy</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-items-stretch ftco-animate">
+            <div class="media block-6 services services-bg d-block text-center px-4 py-5">
+            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-quarantine"></span></div>
+              <div class="media-body py-md-4">
+                <h3>Locked in Pricing</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
           </div>
         </div>
-      </section>
-      <div class="main showcase-page">
-        <section class="module-extra-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-9">
-                <div class="callout-text font-alt">
-                  <h4 style="margin-top: 0px; font-;">Start Creating Beautiful Websites</h4>
-                  <p style="margin-bottom: 0px;">Download Titan Free today!</p>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="callout-btn-box"><a class="btn btn-border-w btn-circle" href="https://themewagon.com/themes/titan/">Downlaod Free</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="module-medium" id="demos">
-          <div class="container">
-            <div class="row multi-columns-row">
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_video_background.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/main_demo.jpg" alt="Main Demo"></div>
-                  <h3 class="content-box-title font-serif">Main Demo</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_agency.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/agency.jpg" alt="Agency"></div>
-                  <h3 class="content-box-title font-serif">Agency</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_portfolio.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/portfolio.jpg" alt="Portfolio"></div>
-                  <h3 class="content-box-title font-serif">Portfolio</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_restaurant.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/restaurant.jpg" alt="Restaurant"></div>
-                  <h3 class="content-box-title font-serif">Restaurant</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_finance.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/finance.jpg" alt="Finance"></div>
-                  <h3 class="content-box-title font-serif">Finance</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_landing.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/landing.jpg" alt="Landing"></div>
-                  <h3 class="content-box-title font-serif">Landing</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_photography.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/photography.jpg" alt="Photography"></div>
-                  <h3 class="content-box-title font-serif">Photography</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_shop.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/shop.jpg" alt="Shop"></div>
-                  <h3 class="content-box-title font-serif">Shop</h3></a></div>
-              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_op_fullscreen_gradient_overlay.html">
-                  <div class="content-box-image"><img src="assets/images/screenshots/one_page.jpg" alt="One Page"></div>
-                  <h3 class="content-box-title font-serif">One Page</h3></a></div>
-            </div>
-          </div>
-        </section>
-        <section class="module-extra-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-9">
-                <div class="callout-text font-alt">
-                  <h4 style="margin-top: 0px;">Start Creating Beautiful Websites</h4>
-                  <p style="margin-bottom: 0px;">Download Titan Free today!</p>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="callout-btn-box"><a class="btn btn-border-w btn-circle" href="https://themewagon.com/themes/titan/">Downlaod Free</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
-    <!--  
-    JavaScripts
-    =============================================
-    -->
-    <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          	<span class="subheading">What we offer</span>
+            <h2 class="mb-2">Featured Properties</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-properties owl-carousel">
+              <div class="item">
+                <div class="property-wrap ftco-animate">
+		        			<a href="#" class="img" style="background-image: url(images/work-1.jpg);">
+		        				<div class="rent-sale">
+		        					<span class="sale">Sale</span>
+		        				</div>
+		        				<p class="price"><span class="orig-price">$300,000</span></p>
+		        			</a>
+		        			<div class="text">
+		        				<ul class="property_list">
+		        					<li><span class="flaticon-bed"></span>3</li>
+		        					<li><span class="flaticon-bathtub"></span>2</li>
+		        					<li><span class="flaticon-floor-plan"></span>1,878 sqft</li>
+		        				</ul>
+		        				<h3><a href="#">The Blue Sky Home</a></h3>
+		        				<span class="location">Oakland</span>
+		        				<a href="#" class="d-flex align-items-center justify-content-center btn-custom">
+		        					<span class="fa fa-link"></span>
+		        				</a>
+		        				<div class="list-team d-flex align-items-center mt-2 pt-2 border-top">
+		        					<div class="d-flex align-items-center">
+			        					<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+			        					<h3 class="ml-2">John Dorf</h3>
+			        				</div>
+			        				<span class="text-right">2 weeks ago</span>
+		        				</div>
+		        			</div>
+		        		</div>
+              </div>
+              <div class="item">
+                <div class="property-wrap ftco-animate">
+		        			<a href="#" class="img" style="background-image: url(images/work-2.jpg);">
+		        				<div class="rent-sale">
+		        					<span class="rent">Rent</span>
+		        				</div>
+		        				<p class="price"><span class="old-price">800,000</span><span class="orig-price">$3,050<small> / mo</small></span></p>
+		        			</a>
+		        			<div class="text">
+		        				<ul class="property_list">
+		        					<li><span class="flaticon-bed"></span>3</li>
+		        					<li><span class="flaticon-bathtub"></span>2</li>
+		        					<li><span class="flaticon-floor-plan"></span>1,878 sqft</li>
+		        				</ul>
+		        				<h3><a href="#">The Blue Sky Home</a></h3>
+		        				<span class="location">Oakland</span>
+		        				<a href="#" class="d-flex align-items-center justify-content-center btn-custom">
+		        					<span class="fa fa-link"></span>
+		        				</a>
+		        				<div class="list-team d-flex align-items-center mt-2 pt-2 border-top">
+		        					<div class="d-flex align-items-center">
+			        					<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+			        					<h3 class="ml-2">John Dorf</h3>
+			        				</div>
+			        				<span class="text-right">2 weeks ago</span>
+		        				</div>
+		        			</div>
+		        		</div>
+              </div>
+              <div class="item">
+                <div class="property-wrap ftco-animate">
+		        			<a href="#" class="img" style="background-image: url(images/work-3.jpg);">
+		        				<div class="rent-sale">
+		        					<span class="rent">Rent</span>
+		        				</div>
+		        				<p class="price"><span class="orig-price">$300<small> / mo</small></span></p>
+		        			</a>
+		        			<div class="text">
+		        				<ul class="property_list">
+		        					<li><span class="flaticon-bed"></span>3</li>
+		        					<li><span class="flaticon-bathtub"></span>2</li>
+		        					<li><span class="flaticon-floor-plan"></span>1,878 sqft</li>
+		        				</ul>
+		        				<h3><a href="#">The Blue Sky Home</a></h3>
+		        				<span class="location">Oakland</span>
+		        				<a href="#" class="d-flex align-items-center justify-content-center btn-custom">
+		        					<span class="fa fa-link"></span>
+		        				</a>
+		        				<div class="list-team d-flex align-items-center mt-2 pt-2 border-top">
+		        					<div class="d-flex align-items-center">
+			        					<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+			        					<h3 class="ml-2">John Dorf</h3>
+			        				</div>
+			        				<span class="text-right">2 weeks ago</span>
+		        				</div>
+		        			</div>
+		        		</div>
+              </div>
+              <div class="item">
+                <div class="property-wrap ftco-animate">
+		        			<a href="#" class="img" style="background-image: url(images/work-4.jpg);">
+		        				<div class="rent-sale">
+		        					<span class="rent">Rent</span>
+		        				</div>
+		        				<p class="price"><span class="orig-price">$300<small> / mo</small></span></p>
+		        			</a>
+		        			<div class="text">
+		        				<ul class="property_list">
+		        					<li><span class="flaticon-bed"></span>3</li>
+		        					<li><span class="flaticon-bathtub"></span>2</li>
+		        					<li><span class="flaticon-floor-plan"></span>1,878 sqft</li>
+		        				</ul>
+		        				<h3><a href="#">The Blue Sky Home</a></h3>
+		        				<span class="location">Oakland</span>
+		        				<a href="#" class="d-flex align-items-center justify-content-center btn-custom">
+		        					<span class="fa fa-link"></span>
+		        				</a>
+		        				<div class="list-team d-flex align-items-center mt-2 pt-2 border-top">
+		        					<div class="d-flex align-items-center">
+			        					<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+			        					<h3 class="ml-2">John Dorf</h3>
+			        				</div>
+			        				<span class="text-right">2 weeks ago</span>
+		        				</div>
+		        			</div>
+		        		</div>
+              </div>
+              <div class="item">
+                <div class="property-wrap ftco-animate">
+		        			<a href="#" class="img" style="background-image: url(images/work-5.jpg);">
+		        				<div class="rent-sale">
+		        					<span class="rent">Rent</span>
+		        				</div>
+		        				<p class="price"><span class="orig-price">$300<small> / mo</small></span></p>
+		        			</a>
+		        			<div class="text">
+		        				<ul class="property_list">
+		        					<li><span class="flaticon-bed"></span>3</li>
+		        					<li><span class="flaticon-bathtub"></span>2</li>
+		        					<li><span class="flaticon-floor-plan"></span>1,878 sqft</li>
+		        				</ul>
+		        				<h3><a href="#">The Blue Sky Home</a></h3>
+		        				<span class="location">Oakland</span>
+		        				<a href="#" class="d-flex align-items-center justify-content-center btn-custom">
+		        					<span class="fa fa-link"></span>
+		        				</a>
+		        				<div class="list-team d-flex align-items-center mt-2 pt-2 border-top">
+		        					<div class="d-flex align-items-center">
+			        					<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+			        					<h3 class="ml-2">John Dorf</h3>
+			        				</div>
+			        				<span class="text-right">2 weeks ago</span>
+		        				</div>
+		        			</div>
+		        		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          	<span class="subheading">Properties</span>
+            <h2 class="mb-2">Properties for this Cities</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<a href="#" class="search-place img" style="background-image: url(images/place-1.jpg);">
+							<div class="desc">
+								<h3><span>Miami</span></h3>
+								<span>24 Properties</span>
+							</div>
+    				</a>
+    			</div>
+    			<div class="col-md-4">
+    				<a href="#" class="search-place img" style="background-image: url(images/place-2.jpg);">
+							<div class="desc">
+								<h3><span>Chicago</span></h3>
+								<span>20 Properties</span>
+							</div>
+    				</a>
+    			</div>
+    			<div class="col-md-4">
+    				<a href="#" class="search-place img" style="background-image: url(images/place-3.jpg);">
+							<div class="desc">
+								<h3><span>Illinoi</span></h3>
+								<span>15 Properties</span>
+							</div>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section services-section bg-darken">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-md-12 text-center heading-section heading-section-white ftco-animate">
+          	<span class="subheading">Work flow</span>
+            <h2 class="mb-3">How it works</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services services-2">
+              <div class="media-body py-md-4 text-center">
+              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>01</span>
+              	<img src="images/blob.svg" alt="">
+              	</div>
+                <h3>Evaluate Property</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services services-2">
+              <div class="media-body py-md-4 text-center">
+              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>02</span>
+              	<img src="images/blob.svg" alt=""></div>
+                <h3>Meet Your Agent</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services services-2">
+              <div class="media-body py-md-4 text-center">
+              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>03</span>
+              	<img src="images/blob.svg" alt=""></div>
+                <h3>Close the Deal</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services services-2">
+              <div class="media-body py-md-4 text-center">
+              	<div class="icon mb-1 d-flex align-items-center justify-content-center"><span>04</span>
+              	<img src="images/blob.svg" alt=""></div>
+                <h3>Have Your Property</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>      
+          </div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 order-md-last d-flex align-items-stretch">
+						<div class="img w-100 img-2 mr-md-2" style="background-image: url(images/about.jpg);"></div>
+						<div class="img w-100 img-2 ml-md-2" style="background-image: url(images/about-2.jpg);"></div>
+					</div>
+					<div class="col-md-5 wrap-about py-md-5 ftco-animate">
+	          <div class="heading-section pr-md-5">
+	            <h2 class="mb-4">Ecoverde Real Estate</h2>
+
+	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-counter img" id="section-counter">
+    	<div class="container">
+    		<div class="row pt-md-5">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-5 mb-4">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Area <br>Population</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-5 mb-4">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="2500">0</strong>
+                <span>Total <br>Properties</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-5 mb-4">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="500">0</strong>
+                <span>Average <br>House</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-5 mb-4">
+              <div class="text d-flex align-items-center">
+                <strong class="number" data-number="67">0</strong>
+                <span>Total <br>Branches</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Testimonial</span>
+            <h2 class="mb-3">Happy Clients</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                  	<span class="fa fa-quote-left"></span>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                  	<span class="fa fa-quote-left"></span>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                  	<span class="fa fa-quote-left"></span>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                  	<span class="fa fa-quote-left"></span>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                  	<span class="fa fa-quote-left"></span>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-agent">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Agents</span>
+            <h2 class="mb-4">Our Agents</h2>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 ftco-animate">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="images/team-1.jpg" class="img-fluid" alt="Colorlib Template">
+		    				<div class="desc">
+		    					<h3><a href="properties.html">Carlos Henderson</a></h3>
+									<p class="h-info"><span class="location">Listing</span> <span class="details">10 Properties</span></p>
+		    				</div>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="images/team-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">Mike Bochs</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="images/team-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">Jessica Moore</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="images/team-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">Sarah Geronimo</a></h3>
+								<p class="h-info"><span class="position">Listing</span> <span class="details">10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pt">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Blog</span>
+            <h2>Recent Blog</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+	              </a>
+	              <div class="meta mb-3">
+                  <div><a href="#">June 01, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+	              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+	              </a>
+	              <div class="meta mb-3">
+                  <div><a href="#">June 01, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+	              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+	              </a>
+	              <div class="meta mb-3">
+                  <div><a href="#">June 01, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+	              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+	              </a>
+	              <div class="meta mb-3">
+                  <div><a href="#">June 01, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+	              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>		
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row mb-5">
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Open Network Solutions</h2>
+				<p>Open Network Solutions delivers scalable IT consulting, strategic partnerships, and end-to-end project management to help businesses innovate and grow.</p>
+				<ul class="ftco-footer-social list-unstyled mt-5">
+				  <li class="ftco-animate"><a href="https://www.linkedin.com/company/open-network-solutions-india/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61566873158571" target="_blank"><span class="fa fa-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.instagram.com/opennetworksolutions/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+				</ul>
+			  </div>
+			</div>
+			<!-- <div class="col-md">
+			  <div class="ftco-footer-widget mb-4 ml-md-4">
+				<h2 class="ftco-heading-2">Community</h2>
+				<ul class="list-unstyled">
+				  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Search Properties</a></li>
+				  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>For Agents</a></li>
+				  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reviews</a></li>
+				  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FAQs</a></li>
+				</ul>
+			  </div>
+			</div> -->
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4 ml-md-4">
+				<h2 class="ftco-heading-2">About Us</h2>
+				<ul class="list-unstyled">
+				  <li><a href="about.html"><span class="fa fa-chevron-right mr-2"></span>Our Story</a></li>
+				  <li><a href="agent.html"><span class="fa fa-chevron-right mr-2"></span>Meet the team</a></li>
+				  <li><a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			   <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Company</h2>
+				<ul class="list-unstyled">
+				  <li><a href="about.html"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+				  <li><a href="blog.html"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+				  <li><a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact Us</a></li>
+				  <li><a href="https://www.linkedin.com/company/open-network-solutions-india/jobs" target="_blank"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				  <h2 class="ftco-heading-2">Have Questions?</h2>
+				  <div class="block-23 mb-3">
+					<ul>
+					  <li><span class="icon fa fa-map"></span><span class="text">B-56, Sector 22 <br> Noida, Uttar Pradesh</span></li>
+					  <li><a href="https://lunacal.ai/chaitanya-yadav-ons/10min" target="_break"><span class="icon fa fa-phone"></span><span class="text">Book a Free Call</span></a></li>
+					  <li><a href="mailto:inqueries@opennetworksolutions.in"><span class="icon fa fa-envelope pr-4"></span><span class="text">Click Here</span></a></li>
+					</ul>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+	  
+			  <p class="footer-company-name">Open Network Solutns India! All Rights Reserved </p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	  
+	
+  
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
   </body>
 </html>
