@@ -1270,13 +1270,13 @@ h1, h2, h3, h4, h5,
 	&.services-bg{
 		background: $primary;
 		&.services-darken{
-			background: darken($primary,3%);
+			background: $primary;
 			@include media-breakpoint-down(md){
 				background: transparent;
 			}
 		}
 		&.services-lighten{
-			background: darken($primary,2%);
+			background: $primary;
 			@include media-breakpoint-down(md){
 				background: transparent;
 			}
