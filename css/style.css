@@ -9649,3 +9649,234 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Contact page styles */
+.contact-hero {
+  background: #1B3764; /* Blue from the ONS color palette */
+}
+
+.contact-hero-title {
+  font-size: 7rem !important;
+  font-weight: 700 !important;
+  color: #F9B949 !important; /* Yellow/Gold from the ONS color palette */
+  line-height: 1.1 !important;
+  margin-bottom: 3rem !important;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.hero-content-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.down-arrow-container {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: bounce 2s infinite;
+}
+
+.down-arrow-icon {
+  font-size: 2rem;
+  color: #F9B949; /* Yellow/Gold from the ONS color palette */
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid #F9B949; /* Yellow/Gold from the ONS color palette */
+}
+
+.down-arrow-icon:hover {
+  background-color: #F9B949; /* Yellow/Gold from the ONS color palette */
+  color: #1B3764; /* Blue from the ONS color palette */
+  transform: translateY(5px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .contact-hero-title {
+    font-size: 6rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact-hero-title {
+    font-size: 5rem !important;
+  }
+
+  .down-arrow-icon {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-hero-title {
+    font-size: 4rem !important;
+  }
+
+  .down-arrow-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-hero-title {
+    font-size: 3.5rem !important;
+  }
+
+  .down-arrow-icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.4rem;
+  }
+}
+
+.contact-info-box {
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-box:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.contact-info-box .icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(197, 160, 46, 0.1);
+  margin: 0 auto;
+}
+
+.contact-info-box .icon span {
+  color: #c5a02e;
+  font-size: 30px;
+}
+
+.contact-info-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contact-info-box a {
+  color: #c5a02e;
+  transition: all 0.3s ease;
+}
+
+.contact-info-box a:hover {
+  color: #000;
+}
+
+.contact-info-box a.btn {
+  color: #fff;
+}
+
+.contact-info-box a.btn:hover {
+  background: #c5a02e;
+  border-color: #c5a02e;
+}
+
+/* Custom styles for carousel-properties navigation arrows */
+.carousel-properties .owl-nav .owl-prev,
+.carousel-properties .owl-nav .owl-next {
+  background: rgba(197, 160, 46, 0.8) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7 !important;
+  z-index: 10;
+  top: 35% !important; /* Position arrows at 35% from the top */
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.carousel-properties .owl-nav .owl-prev:hover,
+.carousel-properties .owl-nav .owl-next:hover {
+  background: rgba(197, 160, 46, 1) !important;
+  opacity: 1 !important;
+}
+
+.carousel-properties .owl-nav .owl-prev span,
+.carousel-properties .owl-nav .owl-next span {
+  color: #fff !important;
+  font-size: 18px;
+}
+
+/* Position the arrows completely outside the carousel items */
+.carousel-properties .owl-nav .owl-prev {
+  left: -60px !important;
+}
+
+.carousel-properties .owl-nav .owl-next {
+  right: -60px !important;
+}
+
+/* Container for the carousel to provide space for arrows */
+.carousel-properties-container {
+  position: relative;
+  padding: 0 70px;
+  overflow: visible;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .carousel-properties .owl-nav .owl-prev {
+    left: -60px !important;
+  }
+
+  .carousel-properties .owl-nav .owl-next {
+    right: -60px !important;
+  }
+
+  .carousel-properties-container {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-properties .owl-nav .owl-prev {
+    left: -60px !important;
+  }
+
+  .carousel-properties .owl-nav .owl-next {
+    right: -60px !important;
+  }
+
+  .carousel-properties-container {
+    padding: 0 70px;
+  }
+}
