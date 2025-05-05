@@ -1,0 +1,45 @@
+/* Custom CSS to override the blue gradient and allow background images to show */
+.hero-wrap {
+  background-image: url('../images/Main_Bg.jpg') !important; /* Force the Main_Bg image */
+  background-color: transparent !important; /* Remove background color */
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-wrap::before {
+  display: none !important; /* Remove the radial gradients */
+}
+
+.hero-wrap .overlay {
+  background: rgba(0, 0, 0, 0.3) !important; /* Add a semi-transparent dark overlay */
+  opacity: 1 !important;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.hero-wrap.hero-wrap-2 {
+  background-image: url('../images/Main_Bg.jpg') !important;
+  background-color: transparent !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.hero-wrap.hero-wrap-2 .overlay {
+  background: rgba(0, 0, 0, 0.3) !important;
+  opacity: 1 !important;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.contact-hero {
+  background-image: url('../images/Main_Bg.jpg') !important;
+  background-color: transparent !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
