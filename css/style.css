@@ -8855,12 +8855,7 @@ textarea.form-control {
   padding-top: 120px;
   padding-bottom: 120px; }
 
-#map {
-  height: 500px;
-  width: 100%; }
-  @media (max-width: 991.98px) {
-    #map {
-      height: 300px; } }
+
 
 @-webkit-keyframes pulse {
   0% {

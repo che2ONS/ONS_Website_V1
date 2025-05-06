@@ -1,0 +1,16 @@
+{
+  "name": "Open Network Solutions",
+  "short_name": "ONS",
+  "description": "Professional IT consulting and solutions provider",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3e64ff",
+  "icons": [
+    {
+      "src": "images/ONS_logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
