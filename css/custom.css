@@ -6,7 +6,7 @@
   background-position: center center !important;
   background-repeat: no-repeat !important;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to visible to prevent content cutoff */
 }
 
 /* Special background for home page */
@@ -56,7 +56,28 @@ a:focus, button:focus, input:focus, textarea:focus {
 /* Improve responsive behavior */
 @media (max-width: 768px) {
   .hero-wrap {
-    height: 80vh;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+
+  /* Add margin to the blue section to prevent overlap with hero content */
+  .ftco-section.ftco-no-pb.ftco-no-pt.bg-primary {
+    margin-top: 20px;
+  }
+
+  /* Adjust text size in hero section for better mobile display */
+  .hero-wrap h1 {
+    font-size: 32px !important;
+  }
+
+  .hero-wrap p {
+    font-size: 16px !important;
+  }
+
+  .hero-wrap ul li {
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
   }
 
   .heading-section h2 {
