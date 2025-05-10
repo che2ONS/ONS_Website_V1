@@ -53,24 +53,18 @@ a:focus, button:focus, input:focus, textarea:focus {
   outline: 2px solid #3e64ff;
 }
 
-/* Stacked heading styling for all views */
-.hero-wrap h1.mobile-stacked-heading {
-  display: block;
+/* Stacked heading styling */
+.hero-wrap h1 span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.hero-wrap h1 {
   line-height: 1.4;
   font-size: 42px !important;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 30px;
-}
-
-.hero-wrap h1.mobile-stacked-heading span {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-/* Hide the original heading */
-.hero-wrap h1.desktop-heading {
-  display: none !important;
 }
 
 /* Improve responsive behavior */
@@ -146,6 +140,19 @@ a:focus, button:focus, input:focus, textarea:focus {
 img, video {
   max-width: 100%;
   height: auto;
+}
+
+/* Team member photos styling for consistency */
+.agent img.img-fluid {
+  object-fit: cover;
+  height: 300px; /* Fixed height to maintain consistency across team photos */
+  width: 100%; /* Ensure the image takes full width of container */
+}
+
+/* Custom styling for Vansh's photo to improve focus */
+.agent img[alt="Vansh Agarwal"],
+.vansh-photo {
+  object-position: center 30%; /* Adjust vertical position to focus on face */
 }
 
 /* Ensure ONS logo image displays properly on all devices */
