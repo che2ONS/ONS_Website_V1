@@ -53,6 +53,26 @@ a:focus, button:focus, input:focus, textarea:focus {
   outline: 2px solid #3e64ff;
 }
 
+/* Stacked heading styling for all views */
+.hero-wrap h1.mobile-stacked-heading {
+  display: block;
+  line-height: 1.4;
+  font-size: 42px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.hero-wrap h1.mobile-stacked-heading span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Hide the original heading */
+.hero-wrap h1.desktop-heading {
+  display: none !important;
+}
+
 /* Improve responsive behavior */
 @media (max-width: 768px) {
   .hero-wrap {
@@ -83,6 +103,26 @@ a:focus, button:focus, input:focus, textarea:focus {
   .heading-section h2 {
     font-size: 28px;
   }
+
+  /* Fix for ONS logo section on mobile */
+  .ftco-section.ftco-no-pb.ftco-no-pt .img.w-100[style*="ONS_logo.jpg"] {
+    min-height: 250px !important;
+    height: 250px !important;
+    background-position: center !important;
+    margin-bottom: 20px;
+  }
+
+  /* Add more spacing between sections on mobile */
+  .ftco-section.ftco-no-pb.ftco-no-pt {
+    padding-top: 40px !important;
+    margin-top: 30px !important;
+  }
+
+  /* Ensure proper spacing after team section */
+  #about-team + .ftco-section.ftco-no-pb.ftco-no-pt {
+    margin-top: 50px !important;
+    padding-top: 50px !important;
+  }
 }
 
 /* Print styles */
@@ -106,6 +146,14 @@ a:focus, button:focus, input:focus, textarea:focus {
 img, video {
   max-width: 100%;
   height: auto;
+}
+
+/* Ensure ONS logo image displays properly on all devices */
+.img.w-100[style*="ONS_logo.jpg"] {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  min-height: 400px;
 }
 
 /* Improve form styling */
