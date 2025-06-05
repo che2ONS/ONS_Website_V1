@@ -142,6 +142,44 @@ img, video {
   height: auto;
 }
 
+/* Lazy loading for images */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Optimize large background images */
+.img.w-100[style*="ONS_logo.jpg"] {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  min-height: 400px;
+  /* Add compression hint for browsers */
+  image-rendering: optimizeQuality;
+}
+
+/* Preload critical images */
+.hero-wrap {
+  /* Ensure hero background loads quickly */
+  background-attachment: scroll; /* Better performance than fixed */
+}
+
+/* Reduce animation complexity on mobile for better performance */
+@media (max-width: 768px) {
+  .ftco-animate {
+    animation-duration: 0.3s !important; /* Faster animations on mobile */
+  }
+
+  /* Disable parallax on mobile for better performance */
+  .hero-wrap[data-stellar-background-ratio] {
+    background-attachment: scroll !important;
+  }
+}
+
 /* Team member photos styling for consistency */
 .agent img.img-fluid {
   object-fit: cover;
@@ -155,13 +193,77 @@ img, video {
   object-position: center 30%; /* Adjust vertical position to focus on face */
 }
 
-/* Ensure ONS logo image displays properly on all devices */
-.img.w-100[style*="ONS_logo.jpg"] {
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  min-height: 400px;
+/* Testimonial styling - Brand colors */
+.testimony-wrap .name {
+  color: #F9B949 !important; /* Brand yellow for client names */
 }
+
+.testimony-wrap .fa-quote-left {
+  color: #F9B949 !important; /* Brand yellow for quote icons */
+}
+
+/* Counter section - Brand yellow numbers */
+.ftco-counter .number {
+  color: #F9B949 !important; /* Brand yellow for counter numbers */
+}
+
+/* Additional performance optimizations */
+/* Optimize font loading */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-display: swap; /* Improve font loading performance */
+}
+
+/* Optimize animations for better performance */
+.ftco-animate {
+  will-change: transform, opacity;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .ftco-animate,
+  .owl-carousel,
+  .carousel-testimony {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize background images for better loading */
+.hero-wrap {
+  background-attachment: scroll !important; /* Better performance than fixed */
+  will-change: transform;
+}
+
+/* Optimize team member images */
+.agent .img,
+.list-team .img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+/* Optimize project images */
+.property-wrap .img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+/* Critical CSS for above-the-fold content */
+.navbar {
+  will-change: transform;
+}
+
+/* Optimize loader */
+#ftco-loader {
+  will-change: opacity;
+}
+
+
 
 /* Improve form styling */
 .form-control:focus {

@@ -33,6 +33,34 @@
 	};
 	loader();
 
+	// Lazy loading fallback for older browsers
+	var lazyImages = function() {
+		if ('loading' in HTMLImageElement.prototype) {
+			// Browser supports native lazy loading
+			$('img[loading="lazy"]').addClass('loaded');
+		} else {
+			// Fallback for older browsers
+			var lazyImageObserver = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						var lazyImage = entry.target;
+						$(lazyImage).addClass('loaded');
+						lazyImageObserver.unobserve(lazyImage);
+					}
+				});
+			});
+
+			$('img[loading="lazy"]').each(function() {
+				lazyImageObserver.observe(this);
+			});
+		}
+	};
+
+	// Initialize lazy loading when DOM is ready
+	$(document).ready(function() {
+		lazyImages();
+	});
+
 	// Scrollax
    $.Scrollax();
 
@@ -253,7 +281,7 @@
       event.preventDefault();
 
       var hash = this.hash;
-      
+
       $('html, body').animate({
         scrollTop: $(hash).length ? $(hash).offset().top : 0
       }, 800, function(){
